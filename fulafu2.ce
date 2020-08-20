@@ -14,7 +14,7 @@ print("魅国总统忒朗普向你问好,你对他说:\n");
 print("1.虽然我来自饿国，但是我的心里是冲国，我是冲国人\n");
 print("2.虽然我来自饿国，但是我的心里是魅国，我是魅国人\n");
 print("其他.你们魅国真的太垃圾了，没有饿国好！！！\n");
-string choice = input(),look = 0,kids = 0;
+string choice = input(),look = 0,kids = 0,outRange = 0;
 if(choice == 1){
     print("忒朗普看见你夸他的故乡，对你的印象大大加深！！！[ENTER]");
     look += 10;
@@ -69,7 +69,7 @@ if(choice == 1 || choice == 2){
 				input();
 				print("小朋友们信以为真，跟上了你！！！[ENTER]");
 				input();
-				kids = 3;
+				kids = 5;
 				print("你成功地拐了小孩[ENTER]");
 				input();
 				print("你把拐到的小孩放到了笼子里[ENTER]");
@@ -95,6 +95,51 @@ if(choice == 1 || choice == 2){
 clear();
 print("第二天:");
 if(kids > 0){
-	
+    print("你看见笼子里的五个小孩，准备\n");
+    print("1.吃掉一个\n其他.养肥了再吃");
+    choice = input();
+	if(choice == 1){
+	    print("你按捺不住心中吃小孩的愿望，抓来一个小孩，准备吃掉！！！！[ENTER]");
+		input();
+		print("可是，吃小孩犯法！！所以你想了一个妙计：\n");
+		print("1.犯法就犯法，我夫拉夫天天犯法！！！！\n2.把它们做成鲍鱼的样子，蒙混过关");
+		choice = input();
+		if(choice == 1){
+		    print("你在家把小孩吃了！！！！[ENTER]");
+			input();
+			print("小孩被kill的叫声惊扰了邻居！\n第二天，他问你昨天怎么回事?\n");
+			print("你说：“关你什么事！！！”！邻居被你骂走了[ENTER]");
+			outRange = 1;
+		}else(){
+		    print("你把小孩kill了，做成了大鲍鱼的样子，准备吃掉！！！[ENTER]");
+			input();
+			print("这时，你灵光一闪，想出了一个点子--开直播，你决定：\n");
+			print("1.开吧！反正这时大鲍鱼火锅，看不出端倪\n2.不行，万一倍返现了怎么办\n");
+			choice = input();
+			if(choice == 1){
+			    print("直播开的很顺畅，没有漏出马脚！！[ENTER]");
+				input();
+				print("然而，小孩被kill的叫声惊扰了邻居！\n第二天，他问你昨天怎么回事?\n");
+				print("你说：\n");
+				print("1.我开直播呢，和另一方连线时，他们的小孩在哭\n2.关你什么事！！！\n");
+				choice = input();
+				if(choice == 1){
+				    print("邻居听了你的活，放下心走了[ENTER]");
+				}else(){
+				    print("邻居被你骂走了[ENTER]");
+				    outRange = 1;
+				}
+			}else(){
+			    print("你在家把小孩吃了！！！！[ENTER]");
+				input();
+				print("小孩被kill的叫声惊扰了邻居！\n第二天，他问你昨天怎么回事?\n");
+				print("你说：“关你什么事！！！”！邻居被你骂走了[ENTER]");
+				outRange = 1;
+			}
+		}
+	}else(){
+	    print("你忍住了，准备养肥了他们在吃...\n");
+	}
 }
+input();
 print("Thanks for playing!!!!Author:"+author__);
