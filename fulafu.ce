@@ -1,0 +1,68 @@
+//作者：aaaa0ggMC
+extern string zh;//全局变量zh(账户)
+extern string ticai;//拍摄的视频的题材,加入extern后，全局可以使用,但经测试，有一点点的小BUG！
+const string anzh = "伏拉夫",anpass = "我爱中国";//const变量，无法修改，可以和extern叠加,成 const extern ....
+const string slpt = 500;
+string password;//(文件局部)变量password(密码)
+print("你是伏拉夫，今天又到了你拍视频的日子了，你准备登录抖*。\n");
+Sleep(slpt);
+print("抖*询问了你的账号及密码。\n");
+Sleep(slpt);
+print("账号：");
+input(zh);
+Sleep(slpt);
+print("密码：");
+input(password);
+Sleep(slpt);
+if(zh == anzh){
+    if(password != anpass){
+	    print("账户正确，密码错误！\n");
+		exit();
+	}else(){
+		print("登录成功！\n");
+		print("欢迎你，伏拉夫！\n");
+	}
+}else(){
+    if(password == anpass){
+	    print("账户错误，密码正确！\n");
+		exit();
+	}else(){
+		print("账户错误，密码错误！\n");
+		exit();
+	}
+}
+print("拍摄什么视频好呢？你想(从“爱中国类” ,”火锅类“ ，”爱中国加火锅类“)：");
+input(ticai);
+if(ticai == "爱中国类"){
+	print("使用后，别人都说你恰烂钱！\n");
+	Sleep(slpt);
+	print("你的粉丝清零了，你失败了！！！！\n");
+}else if(ticai == "火锅类"){
+	print("使用后，并没有什么效果。没有多少人观看。。\n");
+	Sleep(slpt);
+	print("你的粉丝越来越少，你失败了！！！！\n");
+}else if(ticai == "爱中国加火锅类"){
+	print("使用后，别人都说你借机恰烂钱！\n");
+	Sleep(slpt);
+	print("你的粉丝越来越少，你失败了！！！！\n");
+}else(){
+    print("你想出来了一个奇怪的素材，不知收效如何呢？\n");
+    string result;
+    rand(0,100,result);
+    if(result > 60){
+        print("使用后，效果很好，很多都在人观看。。\n");
+        Sleep(slpt);
+        print("你的粉丝越来越多，你成功了！！！！\n");
+        print("恰烂钱是个好东西，这种东西你会越恰越少，直到没有。\n那时，你的信任也没了，到那时你就一无所有了！！！\n");
+        print("恭喜你，通关了！你教会了伏拉夫如何做人！！！！\n");
+        Sleep(1000);
+    }else(){
+        print("使用后，并没有什么效果。没有多少人观看。。\n");
+        Sleep(slpt);
+        print("你的粉丝越来越少，你失败了！！！！\n");
+    }
+}
+print("谢谢游玩！\n");
+input();//仅支持Ce8.0及Ce7.0补丁包以上版本
+
+

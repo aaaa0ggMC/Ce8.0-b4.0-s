@@ -1,0 +1,67 @@
+NotesStart;
+     函数篇
+NotesEnd;
+string au =  "作者:aaaa0ggMC\n赞助商：bili_63584901836，";
+au = au+"一只橙虾丫，bili_34913826671，水神崛起，29509159740_bili\n";
+#pragma author au
+print(author__);
+
+int posx,posy;
+//现在还没有struct
+getMousePosX(posx);//获得全局的鼠标位置的x位置
+getMousePosY(posy);//获得全局的鼠标位置的y位置
+print(posx + " " + posy+"\n");
+Sleep(100);
+getThisMousePosX(posx);////获得鼠标相对于当前窗口的位置x
+getThisMousePosY(posy);////获得鼠标相对于当前窗口的位置y
+print(posx + " " + posy+"\n");
+int keyi;
+string keyc;
+print("按下{ENTER}");
+rloop(){
+    getKeyInt(keyi);//conio.h的getch()
+     if(keyi == 13){
+            //{ENTER}
+            break;
+     }
+}
+print("按下小写的L");
+rloop(){
+    getKeyChar(keyc);//conio.h的getch()再转为std::string
+    if(keyc == "l"){
+         break;
+    }
+}
+int rnd;
+rand(0,100,rnd);//0-100,不包括100
+print("random value:"+rnd);
+
+Sleep(1000);
+
+clear();//清除屏幕，相当于system("CLS")
+
+print("clear the screen!\n");
+
+Sleep(100);
+
+system("CLS");//清除屏幕
+
+int t;
+
+time(t);//获取时间
+
+print("now is:"+t);
+
+string char;
+
+print("输入：");
+
+input(char);//输入
+
+#pragma outputColor 10
+print(char+"\n");
+#pragma outputColor 15
+
+CESTDAPI OUTABLE string outv = "cegfegy\n";
+
+local(outv);//显示变量信息

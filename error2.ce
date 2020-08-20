@@ -1,0 +1,2 @@
+#pragma outputcolor 10
+//the right way is:  #pragma outputColor 10

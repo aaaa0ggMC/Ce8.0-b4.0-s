@@ -1,0 +1,100 @@
+#pragma author "aaaa0ggMC"
+NotesStart;
+    @author:aaaa0ggMC
+    最后奉上fulafu2.ce，非完整版
+NotesEnd;
+clear();
+print("你是夫拉夫[ENTER]");
+input();
+print("是一个正宗的饿国人[ENTER]");
+input();
+print("竞天，你来到了魅国[ENTER]");
+input();
+print("魅国总统忒朗普向你问好,你对他说:\n");
+print("1.虽然我来自饿国，但是我的心里是冲国，我是冲国人\n");
+print("2.虽然我来自饿国，但是我的心里是魅国，我是魅国人\n");
+print("其他.你们魅国真的太垃圾了，没有饿国好！！！\n");
+string choice = input(),look = 0,kids = 0;
+if(choice == 1){
+    print("忒朗普看见你夸他的故乡，对你的印象大大加深！！！[ENTER]");
+    look += 10;
+}else if(choice == 2){
+    print("忒朗普看见你夸他管理的国家，对你的印象加深！！！[ENTER]");
+    look += 5;
+}else(){
+    print("忒朗普把你赶出了魅国！！\n");
+	print("你失败了！！！！[ENTER]");
+    look -= 100;
+}
+input();
+if(choice == 1 || choice == 2){
+    print("你决定在魅国定居下来！[ENTER]");
+	input();
+	print("于是你对忒朗普说:\n");
+	print("1.我爱魅国，我要真正的定居在这里，我要成为一个真正的魅国人！！！\n");
+	print("其他.我要定居魅国！！！！\n");
+	choice = input();
+	if(choice == 1){
+		print("忒朗普对你的印象加深！！！\n");
+		look += 5;
+	}
+	input();
+	print("于是，你便定居了魅国[ENTER]");
+	input();
+	clear();
+	print("第一天[ENTER]");
+	input();
+	print("你决定到街上逛一逛！[ENTER]");
+	input();
+	print("路上，你看到了几个小孩在快乐地van♂耍,你决定：\n");
+	print("1.看看周围\n2.拐了它们\n其他.离开\n");
+	choice = input();
+	if(choice == 1){
+	    print("你看了看周围，发现有几个人.[ENTER]");
+		input();
+		print("你决定：\n");
+		print("1.等一会\n2.拐了它们\n其他.离开\n");
+		choice = input();
+		if(choice == 1){
+		    print("你等了一会，发现他们走了，而小孩任然在快乐地van♂耍.[ENTER]");
+			print("你决定：\n");
+			print("1.离开\n其他.拐了他们\n");
+			choice = input();
+			if(choice == 1){
+			    print("你话也不说，离开了！！！[ENTER]");
+			}else(){
+			    print("你决定拐了他们![ENTER]");
+				input();
+				print("小朋友，跟我来，我给你吃好吃的！！！,你说。[ENTER]");
+				input();
+				print("小朋友们信以为真，跟上了你！！！[ENTER]");
+				input();
+				kids = 3;
+				print("你成功地拐了小孩[ENTER]");
+				input();
+				print("你把拐到的小孩放到了笼子里[ENTER]");
+			}
+		}
+	}else if(choice == 2){
+	    print("你决定拐了他们![ENTER]");
+		input();
+		print("小朋友，跟我来，我给你吃好吃的！！！,你说。[ENTER]");
+		input();
+		print("小朋友们信以为真，跟上了你！！！[ENTER]");
+		input();
+		print("可你太焦急了，没发现旁边有几个大人。[ENTER]");
+		input();
+		print("大人们发现了你的奇怪行为，阻止了你。[ENTER]");
+		input();
+		print("你惺惺的离开了[ENTER]");
+	}else(){
+	    print("你话也不说，离开了！！！[ENTER]");
+	}
+	input();
+}
+clear();
+print("第二天:");
+if(kids > 0){
+	
+}
+print("Thanks for playing!!!!Author:"+author__);

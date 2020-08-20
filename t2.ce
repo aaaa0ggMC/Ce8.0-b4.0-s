@@ -1,0 +1,10 @@
+//Use CESTDAPI
+#pragma author 
+CESTDAPI INORECASE string a;//忽略大小写
+CESTDAPI OUTABLE string b;//允许使用local查看信息
+#pragma CheckApi false
+//允许取消CESTDAPI标签
+INORECASE OUTABLE c = 100;
+
+local(c);
+local(b);

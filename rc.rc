@@ -1,0 +1,32 @@
+#define VOS_NT_WINDOWS32    0x00040004L
+#define VFT_APP             0x00000001L
+
+MAINICON ICON "icon.ico"
+
+//include version information in .exe, modify these values to match your needs
+1 VERSIONINFO
+FILEVERSION 0,0,0,1         //文件版本
+PRODUCTVERSION 0,0,8,0
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", ""
+			 VALUE "FileVersion", "0.1"
+			 VALUE "FileDescription", "ce"    //文件说明
+//			 VALUE "InternalName", "-"
+			 VALUE "LegalCopyright", "Copyright(C)aaaa0ggMC GNU"  //版权说明
+			 VALUE "LegalTrademarks", "https://space.bilibili.com/394099679  aaaa0ggMC"   //合法商标
+			 VALUE "OriginalFilename", "ce.exe"                       //原始文件名
+			 VALUE "ProductName", "ce "       //产品名称
+			 VALUE "ProductVersion", "0.0.8.0"                               //产品版本
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+//		 VALUE "Translation", 0x0409, 1252 //language codes
+		 VALUE "Translation", 0x0804, 2052 ///< @see http://www.science.co.il/Language/Locale-codes.asp
+	 }
+}
